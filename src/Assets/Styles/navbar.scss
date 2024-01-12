@@ -1,0 +1,29 @@
+$border: 2px solid #545454;
+$space: 15px;
+$flex: flex;
+$flex-items: center;
+
+aside, .menu-list li:first-child{
+    border: $border;
+    border-radius: $space;
+}
+aside{
+    position: fixed;
+}
+.menu-list{
+    display: $flex;
+    flex-direction: column;
+    align-items: $flex-items;
+    padding: $space;
+}
+.menu-list li:first-child{
+    background-color: #1b1631;
+    border-width: 1px;
+}
+.menu-list li svg{
+    font-size: 58px;
+    padding: 6px;
+}
+.menu-list li {
+    margin: 12px 0;
+}

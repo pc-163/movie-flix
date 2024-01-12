@@ -1,0 +1,8 @@
+$bodyPadding: 15px;
+$bodyColor: #100d28;
+body {
+  margin: 0 !important;
+  padding: $bodyPadding !important;
+  box-sizing: border-box;
+  background-color: $bodyColor;
+}
