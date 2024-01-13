@@ -1,12 +1,12 @@
 import './App.scss';
 //import File from "./Components/file";
 import Header from './Layouts/Header';
-import NavBar from './Layouts/NavBar';
+//import NavBar from './Layouts/NavBar';
 import Dashboard from './Pages/Dashboard';
-
 import "swiper/css";
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import Footer from './Layouts/Footer';
 
 
 function App() {
@@ -14,13 +14,16 @@ function App() {
   //const ImageAPI = 'http://image.tmdb.org/t/p/w500'
   return (
     <>
-      <div class="columns">
-        <div class="column is-1">
-          <NavBar />
-        </div>
-        <div class="column is-11">
+      <div className="columns">
+       { 
+        // <div className="column is-1">
+        //   <NavBar />
+        // </div>
+      }
+        <div className="column is-12">
           <Header />
           <Dashboard />
+          <Footer />
         </div>
       </div>
 

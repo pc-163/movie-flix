@@ -5,7 +5,7 @@ const Header = () => {
         <header>
             <nav className="navbar" role="navigation" aria-label="main navigation">
                 <div className="navbar-brand">
-                    <a className="navbar-item is-size-4" href="/">
+                    <a href="/"className="navbar-item is-size-4">
                         MOVIE FLIX
                     </a>
                 </div>
@@ -15,13 +15,13 @@ const Header = () => {
                         <div className="navbar-item">
 
                             <div className="buttons">
-                                <a className="button is-light">
+                                <a href="#none"className="button is-light">
                                     <FcSearch />
                                 </a>
-                                <a className="button is-light">
+                                <a href="#none"className="button is-light">
                                     Log in
                                 </a>
-                                <a className="button is-primary">
+                                <a href="#none"className="button is-primary">
                                     <strong>Register</strong>
                                 </a>
                             </div>

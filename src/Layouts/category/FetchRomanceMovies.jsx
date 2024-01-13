@@ -6,17 +6,15 @@ import { useContext } from 'react';
 
 import { UserContext } from '../../Pages/CategoryPage';
 
-
-
-const Trending = ({ first }) => {
+const FetchRomanceMovies = ({ fetchRomanceMovies }) => {
 
     const ImageAPI = useContext(UserContext);
 
     return (
         <>
-            <div className="columns" id="trending">
+            <div className="columns" id="romanticmovies">
                 <div className="column cat-icons">
-                    <FcFlashOn /> <i>Trending</i>
+                    <FcFlashOn /> <i>Romantic Movies</i>
                 </div>
                 <div className="column">
                     <a href="#none" className="button is-primary float-right">
@@ -29,10 +27,10 @@ const Trending = ({ first }) => {
                 <div className="column is-12">
                     <Swiper watchSlidesProgress={true} slidesPerView={5} spaceBetween={15} navigation={true} modules={[Navigation]} className="mySwiper cats-slide">
                         {
-                            first.map((post) => (
+                            fetchRomanceMovies.map((post) => (
                                 <SwiperSlide key={post.id}>
                                     <div className="movie-card">
-                                        <img src={`${ImageAPI}${post.poster_path}`} alt="poster_path" />
+                                        <img src={`${ImageAPI}${post.poster_path}`} alt="poster_path"/>
 
                                         <div className="info">
                                             <h4>Title: {post.title}</h4>
@@ -55,4 +53,4 @@ const Trending = ({ first }) => {
     )
 }
 
-export default Trending
+export default FetchRomanceMovies

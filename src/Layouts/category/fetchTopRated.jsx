@@ -6,18 +6,18 @@ import { useContext } from 'react';
 
 import { UserContext } from '../../Pages/CategoryPage';
 
-const FetchTopRated = ({topRatedList}) => {
+const FetchTopRated = ({ topRatedList }) => {
 
     const ImageAPI = useContext(UserContext);
 
     return (
         <>
-            <div className="columns">
-                <div className="column">
-                    <FcFlashOn /> Top Rated
+            <div className="columns" id="toprated">
+                <div className="column cat-icons">
+                    <FcFlashOn /> <i>Top Rated</i>
                 </div>
                 <div className="column">
-                    <a className="button is-primary">
+                    <a href="#none" className="button is-primary float-right">
                         <strong>View All</strong>
                     </a>
                 </div>
@@ -29,7 +29,18 @@ const FetchTopRated = ({topRatedList}) => {
                         {
                             topRatedList.map((post) => (
                                 <SwiperSlide key={post.id}>
-                                    <img src={`${ImageAPI}${post.poster_path}`} alt="poster_path" />
+                                    <div className="movie-card">
+                                        <img src={`${ImageAPI}${post.poster_path}`} alt="poster_path"/>
+
+                                        <div className="info">
+                                            <h4>Title: {post.title}</h4>
+                                            <p>Description: {post.overview}</p>
+                                            <p>Release Date: {post.release_date}</p>
+                                            <a href="#watch-now" className="button is-primary mt-2">
+                                                <strong>Watch Now</strong>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </SwiperSlide>
                             ))
 

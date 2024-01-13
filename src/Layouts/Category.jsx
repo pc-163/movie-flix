@@ -1,52 +1,50 @@
 
+
 const Category = () => {
+
     return (
         <>
-            <div class="tabs is-toggle is-fullwidth">
+            <div className="tabs is-toggle is-fullwidth">
                 <ul>
-                    <li class="is-active">
-                        <a>
-                            <span class="icon is-small">TV Movie</span>
+                    <li className="is-primary">
+                        <a href="#none">
+                            <span className="icon is-small">All</span>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <span class="icon is-small">Trending</span>
+                        <a href="#tvchannels">
+                            <span className="icon is-small">TV Movie</span>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <span class="icon is-small">Top Rated</span>
+                        <a href="#trending">
+                            <span className="icon is-small">Trending</span>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <span class="icon is-small">Action</span>
+                        <a href="#toprated">
+                            <span className="icon is-small">Top Rated</span>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <span class="icon is-small">Horror</span>
+                        <a href="#action">
+                            <span className="icon is-small">Action</span>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <span class="icon is-small">Romance</span>
+                        <a href="#horror">
+                            <span className="icon is-small">Horror</span>
                         </a>
                     </li>
                     <li>
-                        <a>
-                            <span class="icon is-small">Sci-fi</span>
+                        <a href="#romanticmovies">
+                            <span className="icon is-small">Romance</span>
                         </a>
                     </li>
+                    
                     <li>
-                        <a>
-                            <span class="icon is-small">Westren</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a>
-                            <span class="icon is-small">Animation</span>
+                        <a href="#animation">
+                            <span className="icon is-small">Animation</span>
                         </a>
                     </li>
                 </ul>

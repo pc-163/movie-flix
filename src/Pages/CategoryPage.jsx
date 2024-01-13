@@ -1,7 +1,7 @@
 import Category from "../Layouts/Category"
 import "../Assets/Styles/category.scss";
 import MainCatg from "../Layouts/category/MainCategory";
-import { createContext, useState } from "react";
+import { createContext } from "react";
 
 export const UserContext = createContext();
 

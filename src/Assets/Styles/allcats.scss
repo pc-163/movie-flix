@@ -1,0 +1,84 @@
+.float-right {
+    float: right;
+}
+
+.cat-icons svg,
+.cat-icons i {
+    font-size: 40px;
+}
+
+.cat-icons i {
+    color: #fff;
+}
+
+
+.movie-card {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+    height: 416px;
+}
+
+.movie-card:hover {
+    transform: translateY(10px);
+}
+
+.movie-card:hover:before {
+    opacity: 1;
+}
+
+
+.movie-card:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+.movie-card img {
+
+    object-fit: cover;
+    position: absolute;
+}
+
+.info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 0.5s;
+    padding: 15px;
+}
+
+.movie-card:hover .info {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.info h4 {
+    margin: 0px;
+}
+
+.info p {
+    letter-spacing: 1px;
+    font-size: 15px;
+    margin-top: 8px;
+    max-height: 70px;
+    overflow: hidden;
+}
+
+.info .button {
+    display: flex;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
