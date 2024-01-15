@@ -1,8 +1,8 @@
 {
-  "name": "movieflix",
+  "name": "movie-flix",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://pc-163.github.io/movieflix",
+  "homepage": "https://pc-163.github.io/movie-flix",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
